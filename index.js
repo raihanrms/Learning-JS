@@ -8,7 +8,7 @@
 // in-line comment for declaring variable
 /* This is multiline comment */
 
-/* Data types: undefined, null, boolean, string, symbol, number, 
+/* Data types: undefined, null, boolean, string, symbol, number,
 and object */
 
 /*  Declaring variables */
@@ -22,6 +22,7 @@ var a;          // declaring a variable
 var b = 2;      // assigning and declaring a variable, = is the assign variable
 a = 7;
 b = a;
+// c = 1; 
 
 // console.log(a) // allows you to see things in the console
 
@@ -131,7 +132,7 @@ var myString1 = '<a href="https://facebook.com" target="_blank">Link</a>';
 var myString2 = `'<a href="https://facebook.com" target="_blank">Link</a>'`;
 //console.log(myString2)
 
-/****** 
+/******
  * Escape sequences in Strings *
 CODE    OUTPUT
 \'      single qoute
@@ -181,12 +182,12 @@ ourArray5[1] = 45; // result will be [18,45,99]
 /* Modify multidimensional array */
 var myArray6 = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13,14]];
 var myData6 = myArray6[2][1];
-//console.log(myData6) 
+//console.log(myData6)
 
 /* Manipulate arrays with push() fuction */
 var ourArray7 = ["TukTuk", "R", "cat"];
 // Note: push() fuction adds the element at the end of the array
-ourArray7.push(["happy", "joy"]); 
+ourArray7.push(["happy", "joy"]);
 //console.log(ourArray7)
 
 /* Manupilate arrays with pop() function */
@@ -262,7 +263,7 @@ var outerWear = "T-Shirt"; // global variable
 
 function myOutFit(){
     var outerWear = "Sweater"; // local variable will take presitence
-        
+
     return outerWear;
 }
 //console.log(myOutFit()); // will return local variable
@@ -297,7 +298,7 @@ changed = change(10);
 // YT time(1:06:01)
 /* Stand in Line (Queue) */
 function nextInLine(arr, item){
-    arr.push(item); // add item at the end 
+    arr.push(item); // add item at the end
     return arr.shift(); // removed the first item
 }
 var testArr = [1,2,3,4,5];
@@ -465,7 +466,7 @@ function testElseIf(val){
 // Note: Order is important in IF ELSE statements
 function orderMyLogic(val){
     if (val < 5){
-        return "Less than 5";                
+        return "Less than 5";
     } else if (val < 10){
         return "Less than 10";
     } else {
@@ -479,7 +480,7 @@ function testSize(num){
     if (num < 5){
         return "Tiny";
     } else if (num < 10){
-        return "Small";        
+        return "Small";
     } else if (num < 15){
         return "Medium";
     } else if (num < 20){
@@ -523,7 +524,7 @@ function caseInSwitch(val){
             break;
         case 3:
             answer = "Gamma";
-            break;      
+            break;
         case 4:
             answer = "Delta";
             break;
@@ -573,7 +574,7 @@ function sequentialSizes(val){
         case 8:
         case 9:
             answer = "High";
-            break;       
+            break;
     }
     return answer;
 }
@@ -614,7 +615,7 @@ function abTest(a, b){
     if (a < 0 || b < 0){
         return undefined;
     }
-    
+
     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
 //console.log(abTest(-2, 2));
@@ -721,14 +722,14 @@ delete myDog.bark;
 /* Using Objects for Lookups */
 function phoneticLookup(val){
     var result = "";
-    
-    var lookup = { 
+
+    var lookup = {
         "alpha": "Adams",
         "bravo": "Boston",
         "charlie": "Chicago",
         "delta": "Denver",
         "echo": "Easy",
-        "foxtrot": "Frank"        
+        "foxtrot": "Frank"
     };
     result = lookup[val];
     return result;
@@ -768,7 +769,7 @@ var myMusic = [
     }
 ];
 
-/* Accessing Nested Objects */ 
+/* Accessing Nested Objects */
 var myStorage = {
     "car": {
         "inside": {
@@ -807,7 +808,7 @@ var collection = {
     "2468": {
         "album": "1999",
         "artist": "Prince",
-        "tracks": ["1999", "Little Red Corvette"]       
+        "tracks": ["1999", "Little Red Corvette"]
     },
     "1245": {
         "artist": "Robert Palmer",
@@ -943,7 +944,7 @@ function randomFraction(){
 /* Generate Random Whole Numbers */
 var randomNumber0to19 = Math.floor(Math.random() * 20);
 function randomWholeNum(){
-    
+
     return Math.floor(Math.random() * 10);
 }
 //console.log(randomWholeNum());
